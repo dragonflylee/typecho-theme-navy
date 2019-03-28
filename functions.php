@@ -9,11 +9,14 @@ function themeConfig($form) {
     $navy_tips = new Typecho_Widget_Helper_Form_Element_Text('navy_tips', NULL, '一个高端大气上档次的网站', _t('头像提示'), _t(''));
     $form->addInput($navy_tips);
 
+    $icp = new Typecho_Widget_Helper_Form_Element_Text('icp', NULL, NULL, _t('备案号'), _t(''));
+    $form->addInput($icp);
+
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
     array('ShowRecentPosts' => _t('显示最新文章'),
-    'ShowCategory' => _t('显示分类'),
-    'ShowArchive' => _t('显示归档'),
-    'ShowOther' => _t('显示其它杂项')),
+        'ShowCategory' => _t('显示分类'),
+        'ShowArchive' => _t('显示归档'),
+        'ShowOther' => _t('显示其它杂项')),
     array('ShowRecentPosts', 'ShowCategory'), _t('侧边栏显示'));
     
     $form->addInput($sidebarBlock->multiMode());

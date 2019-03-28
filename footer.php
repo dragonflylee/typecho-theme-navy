@@ -4,6 +4,7 @@
 <footer id="footer">
 	<div class="container">
 		&copy; <?php echo date('Y'); ?> <a rel="nofollow" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
+        <?php if ($this->options->icp): ?><a href="http://www.miitbeian.gov.cn" target="_blank"><?php $this->options->icp() ?></a>.<?php endif; ?>
 	</div>
 </footer>
 </div>
