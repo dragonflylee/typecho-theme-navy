@@ -18,7 +18,7 @@
     <![endif]-->
     <link rel="stylesheet" href="//cdn.staticfile.org/normalize/3.0.1/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <script type="text/javascript" src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
     <?php $this->header("generator=&template=&"); ?>
 </head>
 <body>

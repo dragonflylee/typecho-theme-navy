@@ -2,7 +2,7 @@
 
 function themeConfig($form) {
 
-    $navy_gravatar = new Typecho_Widget_Helper_Form_Element_Text('navy_gravatar', NULL, 'claymoreboy@126.com', _t('底部头像'), _t(''));
+    $navy_gravatar = new Typecho_Widget_Helper_Form_Element_Text('navy_gravatar', NULL, 'dragonflylee@126.com', _t('底部头像'), _t(''));
     $navy_gravatar->input->setAttribute('class', 'w-100 mono');
     $form->addInput($navy_gravatar->addRule('email', '请填写一个邮箱地址'));
 
@@ -22,9 +22,6 @@ function themeConfig($form) {
 function getGravatar($email, $s = 40, $d = 'mm', $g = 'g') {
 
     $hash = md5($email);
-
-    $avatar = "http://gravatar.duoshuo.com/avatar/$hash?s=$s&d=$d&r=$g";
-
-    return $avatar;
+    return "//www.gravatar.com/avatar/$hash?s=$s";
 
 }
